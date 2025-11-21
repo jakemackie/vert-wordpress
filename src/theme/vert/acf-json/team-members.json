@@ -1,0 +1,87 @@
+{
+    "key": "team_member_fields_key",
+    "title": "Team Member Details",
+    "fields": [
+        {
+            "key": "team_member_field_profile_image_key",
+            "name": "team_member_field_profile_image",
+            "label": "Profile Image",
+            "type": "image",
+            "instructions": "Upload the profile image of the Team Member",
+            "return_format": "id",
+            "preview_size": "medium",
+            "library" : "all",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "team_member_field_position_key",
+            "name": "team_member_field_position",
+            "label": "Role",
+            "type": "select",
+            "choices": {
+                "owner": "Vert Owner",
+                "lead": "Vert Lead",
+                "trickliner": "Trickliner",
+                "content-creator": "Content Creator",
+                "vfx": "VFX Artist"
+            },
+            "instructions": "Enter the Team Member's role",
+            "required": 1,
+            "default_value": "trickliner",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "team_member_field_biography_key",
+            "name": "team_member_field_biography",
+            "label": "Biography",
+            "type": "textarea",
+            "instructions": "Enter a brief biography of the Team Member. This will be shown on the Team Member's profile page.",
+            "default_value": "",
+            "placeholder": "e.g., I hate the hedgemont shop..."
+        },
+        {
+            "key": "team_member_field_social_media_links_key",
+            "name": "team_member_field_social_media_links",
+            "label": "Social Media Links",
+            "type": "repeater",
+            "instructions": "Add links to the Team Member's social media profiles",
+            "sub_fields": [
+                {
+                    "key": "team_member_field_social_media_links_platform_key",
+                    "name": "team_member_field_social_media_links_platform",
+                    "label": "Platform",
+                    "type": "select",
+                    "choices": {
+                        "tiktok": "TikTok",
+                        "youtube": "YouTube",
+                        "x": "X"
+                    },
+                    "instructions": "Enter the social media platform (e.g., TikTok, YouTube)",
+                    "required": 1
+                },
+                {
+                    "key": "team_member_field_social_media_links_username_key",
+                    "name": "team_member_field_social_media_links_username",
+                    "label": "Username",
+                    "type": "text",
+                    "instructions": "Enter the social media username or handle",
+                    "prepend": "@",
+                    "required": 1
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "team_member"
+            }
+        ]
+    ]
+}
