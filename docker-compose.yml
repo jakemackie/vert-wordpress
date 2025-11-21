@@ -1,15 +1,13 @@
-version: '3'
-
 services:
   wp:
-    image: wordpress:latest # https://hub.docker.com/_/wordpress/
+    image: wordpress:latest
     ports:
-      - ${IP}:${PORT}:80 # change ip if required
+      - ${IP}:${PORT}:80
     volumes:
       - ./config/wp_php.ini:/usr/local/etc/php/conf.d/conf.ini
-      - ./wp-app:/var/www/html # Full wordpress project
+      - ./wp-app:/var/www/html
+      - ./src/theme/vert:/var/www/html/wp-content/themes/vert
       #- ./plugin-name/trunk/:/var/www/html/wp-content/plugins/plugin-name # Plugin development
-      #- ./theme-name/trunk/:/var/www/html/wp-content/themes/theme-name # Theme development
     environment:
       WORDPRESS_DB_HOST: db
       WORDPRESS_DB_NAME: "${DB_NAME}"
