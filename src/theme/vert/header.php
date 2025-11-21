@@ -7,13 +7,11 @@
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <?php wp_head(); ?>
 </head>
-<body class="min-h-screen">
-
+<body <?php body_class("min-h-screen flex flex-col bg-zinc-950 text-white"); ?>>
     <?php 
         get_template_part(
-            slug: "template-parts/header/template-part",
-            name: "header"
+            slug: 'components/header/template-part',
+            name: 'navbar'
         ); 
     ?>
-
     <main id="main" class="flex-1" role="main">
