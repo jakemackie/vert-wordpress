@@ -1,0 +1,22 @@
+{
+    "key": "block_player",
+    "title": "Player",
+    "fields": [
+        {
+            "key": "block_player_select_key",
+            "name": "block_player_select",
+            "type": "post_object",
+            "return_format": "id",
+            "post_type": "team_member"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "vert\/player"
+            }
+        ]
+    ]
+}

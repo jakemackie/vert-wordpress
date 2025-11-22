@@ -1,0 +1,52 @@
+{
+    "$schema": "https://raw.githubusercontent.com/AdvancedCustomFields/schemas/main/json/block.json",
+    "name": "vert/player",
+    "title": "Player",
+    "description": "Display a player",
+    "icon": "layout",
+    "apiVersion": 2,
+    "keywords": [],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "player.php"
+    },
+    "styles": [],
+    "supports": {
+        "align": true,
+        "alignContent": true,
+        "alignText": true,
+        "anchor": true,
+        "color": {
+            "background": true,
+            "link": false,
+            "text": true
+        },
+        "fullHeight": false,
+        "jsx": true,
+        "spacing": {
+            "margin": true,
+            "padding": true
+        }
+    },
+    "attributes": {
+        "style": {
+            "type": "object",
+            "default": {
+                "spacing": {
+                    "margin": {
+                        "top": "var:preset|spacing|80",
+                        "bottom": "var:preset|spacing|80"
+
+                    }
+                }
+            }
+        }
+    },
+    "example": {
+        "attributes": {
+            "data": {
+                "preview": true
+            }
+        }
+    }
+}

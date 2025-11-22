@@ -1,0 +1,111 @@
+{
+    "version": 2,
+    "settings": {
+        "color": {
+            "palette": [
+                {
+                    "name": "White",
+                    "slug": "white",
+                    "color": "#ffffff"
+                },
+                {
+                    "name": "Black",
+                    "slug": "black",
+                    "color": "#000000"
+                }
+            ]
+        },
+        "typography": {
+            "fontSizes": [
+                {
+                    "name": "Small",
+                    "slug": "sm",
+                    "size": 12
+                },
+                {
+                    "name": "Medium",
+                    "slug": "md",
+                    "size": 16
+                },
+                {
+                    "name": "Large",
+                    "slug": "lg",
+                    "size": 20
+                },
+                {
+                    "name": "Extra Large",
+                    "slug": "xl",
+                    "size": 32
+                }
+            ]
+        },
+		"spacing": {
+			"padding": false,
+			"margin": false,
+			"customSpacingSize": false,
+			"defaultSpacingSizes": false,
+			"spacingSizes": [
+				{
+					"size": "0.5rem",
+					"slug": "8",
+					"name": "XS (8px)"
+				},
+				{
+					"size": "1rem",
+					"slug": "16",
+					"name": "Small (16px)"
+				},
+				{
+					"size": "1.5rem",
+					"slug": "24",
+					"name": "Medium (24px)"
+				},
+				{
+					"size": "2rem",
+					"slug": "32",
+					"name": "Large (32px)"
+				},
+				{
+					"size": "3rem",
+					"slug": "48",
+					"name": "XL (48px)"
+				},
+				{
+					"size": "4rem",
+					"slug": "64",
+					"name": "2XL (64px)"
+				},
+				{
+					"size": "5rem",
+					"slug": "80",
+					"name": "3XL (80px)"
+				},
+				{
+					"size": "6rem",
+					"slug": "96",
+					"name": "3.5XL (96px)"
+				},
+				{
+					"size": "7rem",
+					"slug": "112",
+					"name": "4XL (112px)"
+				},
+				{
+					"size": "10rem",
+					"slug": "160",
+					"name": "5XL (160px)"
+				},
+				{
+					"size": "14rem",
+					"slug": "224",
+					"name": "6XL (224px)"
+				},
+				{
+					"size": "17.5rem",
+					"slug": "280",
+					"name": "7XL (280px)"
+				}
+			]
+		}
+    }
+}
